@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking | DriveEase</title>
+    <link rel="stylesheet" href="../CSS/booking.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav container">
+        <a class="logo" href="../index.html">Drive<b>Ease</b></a
+        ><button class="menu" id="menuBtn">☰</button>
+        <div class="links" id="navLinks">
+          <a class="" href="../index.html">Home</a
+          ><a class="active" href="cars.html">Cars</a
+          ><a class="" href="about.html">About</a
+          ><a class="" href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main class="section container" style="max-width: 760px">
+      <p class="eyebrow">RESERVE YOUR RIDE</p>
+      <h1 class="page-title">Book your <em>car.</em></h1>
+      <p class="muted" id="selectedCar" style="margin: 10px 0 22px">
+        Selected vehicle
+      </p>
+      <form class="panel" id="bookingForm">
+        <div class="two-col" style="gap: 15px">
+          <label
+            >Full name<input
+              id="name"
+              required
+              placeholder="Your full name" /></label
+          ><label
+            >Contact number<input
+              id="phone"
+              type="tel"
+              required
+              placeholder="+92 300 1234567" /></label
+          ><label>Pickup date<input id="pickup" type="date" required /></label
+          ><label>Return date<input id="return" type="date" required /></label>
+        </div>
+        <label
+          >Pickup location<input
+            id="location"
+            required
+            placeholder="Enter pickup location" /></label
+        ><label
+          >Email address<input
+            id="email"
+            type="email"
+            required
+            placeholder="you@example.com"
+        /></label>
+        <div id="estimate" class="panel" style="margin: 15px 0">
+          Choose pickup and return dates to calculate estimated price.
+        </div>
+        <button class="btn" type="submit">Submit Booking Request →</button>
+        <p
+          id="status"
+          class="muted"
+          style="margin-top: 12px"
+          aria-live="polite"
+        ></p>
+      </form>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <strong>Drive<span>Ease</span></strong
+        ><span>Making every journey easier, one ride at a time.</span
+        ><span>© 2026 DriveEase. All rights reserved.</span>
+      </div>
+    </footer>
+    <script src="../JS/booking.js"></script>
+  </body>
+</html>

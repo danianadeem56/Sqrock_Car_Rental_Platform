@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | DriveEase</title>
+    <link rel="stylesheet" href="../CSS/contact.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav container">
+        <a class="logo" href="../index.html">Drive<b>Ease</b></a
+        ><button class="menu" id="menuBtn">☰</button>
+        <div class="links" id="navLinks">
+          <a class="" href="../index.html">Home</a
+          ><a class="" href="cars.html">Cars</a
+          ><a class="" href="about.html">About</a
+          ><a class="active" href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section container two-col">
+        <div>
+          <p class="eyebrow">GET IN TOUCH</p>
+          <h1 class="page-title">
+            Let's plan your<br /><em>next journey.</em>
+          </h1>
+          <p class="muted" style="margin: 18px 0 25px">
+            Have a question or need help choosing a car? Send us a message and
+            our team will get back to you.
+          </p>
+          <div class="panel">
+            <p>
+              <strong>Email</strong><br /><span class="muted"
+                >hello@driveease.com</span
+              >
+            </p>
+            <p style="margin-top: 15px">
+              <strong>Phone</strong><br /><span class="muted"
+                >+92 300 1234567</span
+              >
+            </p>
+            <p style="margin-top: 15px">
+              <strong>Social media</strong><br /><a
+                href="https://facebook.com"
+                target="_blank"
+                >Facebook</a
+              >
+              · <a href="https://instagram.com" target="_blank">Instagram</a> ·
+              <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+        <form class="panel" id="contactForm">
+          <h2 style="font: 800 23px Manrope; margin-bottom: 5px">
+            Send us a message
+          </h2>
+          <p class="muted" style="margin-bottom: 18px">
+            We'd love to hear from you.
+          </p>
+          <label
+            >Your name<input
+              id="name"
+              required
+              placeholder="Enter your name" /></label
+          ><label
+            >Email address<input
+              id="email"
+              type="email"
+              required
+              placeholder="Enter your email" /></label
+          ><label
+            >Your message<textarea
+              id="message"
+              rows="5"
+              required
+              placeholder="How can we help?"
+            ></textarea></label
+          ><button class="btn" type="submit">Send Message →</button>
+          <p
+            id="status"
+            class="muted"
+            style="margin-top: 12px"
+            aria-live="polite"
+          ></p>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <strong>Drive<span>Ease</span></strong
+        ><span>Making every journey easier, one ride at a time.</span
+        ><span>© 2026 DriveEase. All rights reserved.</span>
+      </div>
+    </footer>
+    <script src="../JS/contact.js"></script>
+  </body>
+</html>
