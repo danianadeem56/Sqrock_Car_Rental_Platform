@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -35,6 +35,106 @@
             margin-bottom: 28px;
           "
         >
+          <label
+            >Search by name<input
+              id="search"
+              placeholder="e.g. Toyota Corolla" /></label
+          ><label
+            >Brand<select id="brand">
+              <option value="">All brands</option>
+            </select></label
+          ><label
+            >Fuel type<select id="fuel">
+              <option value="">All fuel types</option>
+              <option value="Petrol">
+                Petrol — Corolla, Civic, Sportage, Swift, City, Alto
+              </option>
+              <option value="Diesel">Diesel — Fortuner</option>
+              <option value="Hybrid">Hybrid — Tucson</option>
+              <option value="Electric">Electric — Tesla Model 3</option>
+            </select></label
+          ><label
+            >Transmission<select id="transmission">
+              <option value="">All transmissions</option>
+              <option value="Automatic">
+                Automatic — Corolla, Civic, Sportage, Fortuner, Tucson, Tesla
+                Model 3
+              </option>
+              <option value="Manual">Manual — Swift, City, Alto</option>
+            </select></label
+          ><label
+            >Daily price<select id="price">
+              <option value="">Any price</option>
+              <option value="budget">
+                Budget (Up to Rs. 7,000) — Suzuki Swift, Suzuki Alto
+              </option>
+              <option value="mid">
+                Mid-Range (Rs. 7,001–12,000) — Honda City, Toyota Corolla, Honda
+                Civic
+              </option>
+              <option value="premium">
+                Premium (Above Rs. 12,000) — Kia Sportage, Toyota Fortuner,
+                Hyundai Tucson, Tesla Model 3
+              </option>
+            </select></label
+          ><button class="btn dark-btn" id="reset" style="align-self: center">
+            Reset Filters
+          </button>
+        </div>
+        <p id="count" class="muted" style="margin-bottom: 15px"></p>
+        <div class="grid" id="carGrid"></div>
+        <p
+          id="empty"
+          hidden
+          class="muted"
+          style="padding: 45px; text-align: center"
+        >
+          No cars found. Try different filters.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <strong>Drive<span>Ease</span></strong
+        ><span>Making every journey easier, one ride at a time.</span
+        ><span>© 2026 DriveEase. All rights reserved.</span>
+      </div>
+    </footer>
+    <script src="../JS/cars.js"></script>
+  </body>
+</html> -->
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars | DriveEase</title>
+    <link rel="stylesheet" href="../CSS/cars.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav container">
+        <a class="logo" href="../index.html">Drive<b>Ease</b></a
+        ><button class="menu" id="menuBtn">☰</button>
+        <div class="links" id="navLinks">
+          <a class="" href="../index.html">Home</a
+          ><a class="active" href="cars.html">Cars</a
+          ><a class="" href="about.html">About</a
+          ><a class="" href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section container">
+        <p class="eyebrow">OUR CAR COLLECTION</p>
+        <h1 class="page-title">Find your <em>perfect ride.</em></h1>
+        <p class="muted" style="margin: 10px 0 25px">
+          Search and filter our available rental cars.
+        </p>
+        <div class="panel filter-panel">
           <label
             >Search by name<input
               id="search"

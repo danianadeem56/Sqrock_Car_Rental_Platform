@@ -1,3 +1,6 @@
+
+
+
 // const cars = [
 //   {
 //     id: 1,
@@ -224,9 +227,20 @@
 //   document.getElementById("empty").hidden = result.length !== 0;
 // }
 
-// [search, brand, fuel, trans, price].forEach((element) => {
-//   element.addEventListener("input", render);
-//   element.addEventListener("change", render);
+// // Sirf wohi filter kaam kare jo abhi chuna gaya hai.
+// // Jab koi filter chuna jaye to baaki sab filters khali (reset) ho jate hain.
+// const allFilters = [search, brand, fuel, trans, price];
+
+// function onFilterChange(changed) {
+//   allFilters.forEach((el) => {
+//     if (el !== changed) el.value = "";
+//   });
+//   render();
+// }
+
+// allFilters.forEach((element) => {
+//   element.addEventListener("input", () => onFilterChange(element));
+//   element.addEventListener("change", () => onFilterChange(element));
 // });
 
 // document.getElementById("reset").addEventListener("click", () => {
@@ -235,13 +249,40 @@
 //   fuel.value = "";
 //   trans.value = "";
 //   price.value = "";
-//   render();
+//   // Browsers can restore old/autofilled form values AFTER this script runs,
+// // so the list and the dropdowns go out of sync. Turn that off and
+// // re-render whenever the page is shown so the list always matches the filters.
+// [search, brand, fuel, trans, price].forEach((el) => {
+//   el.setAttribute("autocomplete", "off");
+// });
+
+// render();
+// window.addEventListener("load", render);
+// window.addEventListener("pageshow", render);
 // });
 
 // document.getElementById("menuBtn").onclick = () =>
 //   document.getElementById("navLinks").classList.toggle("show");
 
+// // Browsers can restore old/autofilled form values AFTER this script runs,
+// // so the list and the dropdowns go out of sync. Turn that off and
+// // re-render whenever the page is shown so the list always matches the filters.
+// [search, brand, fuel, trans, price].forEach((el) => {
+//   el.setAttribute("autocomplete", "off");
+// });
+
 // render();
+// window.addEventListener("load", render);
+// window.addEventListener("pageshow", render);
+
+
+
+
+
+
+
+
+
 
 
 const cars = [
@@ -492,16 +533,7 @@ document.getElementById("reset").addEventListener("click", () => {
   fuel.value = "";
   trans.value = "";
   price.value = "";
-  // Browsers can restore old/autofilled form values AFTER this script runs,
-// so the list and the dropdowns go out of sync. Turn that off and
-// re-render whenever the page is shown so the list always matches the filters.
-[search, brand, fuel, trans, price].forEach((el) => {
-  el.setAttribute("autocomplete", "off");
-});
-
-render();
-window.addEventListener("load", render);
-window.addEventListener("pageshow", render);
+  render();
 });
 
 document.getElementById("menuBtn").onclick = () =>
