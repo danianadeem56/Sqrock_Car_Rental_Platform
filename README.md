@@ -1,56 +1,45 @@
-# DriveEase – Multi-Page Car Rental Platform
+🚗 DriveEase – Car Rental Platform
 
-Frontend internship project built with HTML5, CSS3, and JavaScript.
+DriveEase is a modern and responsive multi-page car rental website that allows users to explore cars, check vehicle details, and make booking requests through a user-friendly interface.
 
-## Folder Structure
-```text
-DriveEase-Multi-Page/
-├── index.html                 # Root / Home page
-├── HTML/
-│   ├── cars.html
-│   ├── details.html
-│   ├── booking.html
-│   ├── about.html
-│   └── contact.html
-├── CSS/
-│   ├── home.css
-│   ├── cars.css
-│   ├── details.css
-│   ├── booking.css
-│   ├── about.css
-│   └── contact.css
-├── JS/
-│   ├── home.js
-│   ├── cars.js
-│   ├── details.js
-│   ├── booking.js
-│   ├── about.js
-│   └── contact.js
-└── README.md
-```
+✨ Features
 
-## Pages
-- `index.html` – Home page and featured cars
-- `HTML/cars.html` – Car listings with search and filters
-- `HTML/details.html` – Selected car specifications and features
-- `HTML/booking.html` – Booking form with date validation and estimated price
-- `HTML/about.html` – Company information and services
-- `HTML/contact.html` – Contact details and contact form
+Modern and responsive website design
 
-## Run the Project
-1. Extract the ZIP file.
-2. Open the project folder in VS Code.
-3. Open the root `index.html` with Live Server.
-4. Navigate between pages using the menu.
+Home page with featured cars
 
-## Features
-- Responsive mobile navigation
-- Search cars by name
-- Filters by brand, price, fuel type, and transmission
-- Individual car details page
-- Booking form with date validation and price estimate
-- Contact form frontend demo
-- Booking requests stored in browser Local Storage
+Browse available cars
 
-## Note
-This is a frontend-only demo. Real reservations and email delivery require a backend.
+Search cars by name
+
+Filter cars by brand
+
+Filter by price range
+
+Filter by fuel type
+
+Filter by transmission (Automatic & Manual)
+
+Individual car details
+
+Booking form with date validation
+
+Estimated booking price
+
+About Us page
+
+Contact page with contact form
+
+Local Storage for booking requests
+
+🛠️ Technologies Used
+
+HTML5
+
+CSS3
+
+JavaScript
+
+Font Awesome
+
+Google Fonts
